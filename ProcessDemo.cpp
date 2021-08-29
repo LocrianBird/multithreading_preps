@@ -9,7 +9,7 @@ int _tmain(int argc, _TCHAR* argv[]) {
 	PROCESS_INFORMATION processInformation = { 0 };
 
 	BOOL bSuccess = CreateProcess(
-		TEXT("C:\\Windows\\notepad.exe"), NULL, NULL,
+		TEXT("C://Windows//notepad.exe"), NULL, NULL,
 		NULL, FALSE, NULL, NULL, NULL, &startupInfo,
 		&processInformation);
 
@@ -25,6 +25,6 @@ int _tmain(int argc, _TCHAR* argv[]) {
 			<< "Error Code:\t" << GetLastError() << endl;
 	}
 
-	CloseHandle(processInformation.hProcess);
+	
 	return system("pause");
 }
