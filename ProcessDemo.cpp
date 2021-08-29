@@ -15,14 +15,14 @@ int _tmain(int argc, _TCHAR* argv[]) {
 
 	if (bSuccess)
 	{
-		cout << "Process Started." << endl
-			<< "Process ID:\t"
+		cout << "Process Started" << endl
+			<< "Process ID: "
 			<< processInformation.dwProcessId << endl;
 	}
 	else
 	{
 		cout << "Process cannot start!" << endl
-			<< "Error Code:\t" << GetLastError() << endl;
+			<< "Error Code: " << GetLastError() << endl;
 	}
 
 	
